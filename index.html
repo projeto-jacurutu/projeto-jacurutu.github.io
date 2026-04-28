@@ -1,61 +1,490 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projeto Jacurutu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <!-- INICIO NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-      <div class="container">
-        <a class="navbar-brand fw-normal" href="#inicio">
-	  <img src="imgs/logo_jacurutu_sem_borda.svg" alt="Jacurutu" width="30" height="30" class="d-inline-block align-text-middle"> 
-          Projeto Jacurutu 
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#inicio">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre-projeto">Sobre o projeto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projetos">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#como-citar">Como citar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#material-referencia">Material de referência</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#colaboradores">Colaboradores</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6"> <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes" width="700" height="500" loading="lazy"> </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Projeto Jacurutu</h1>
-          <p class="lead">Um modelo guiado para trabalhos acadêmicos da Universidade Federal do Rio de Janeiro.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button"
-              class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> <button type="button"
-              class="btn btn-outline-secondary btn-lg px-4">Default</button> </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto Jacurutu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="js/scripts.js"></script>
+</head>
+
+<body id="inicio">
+  <!-- INICIO NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-3 border-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-normal text-light fs-3" href="#inicio">
+        <img src="imgs/logo_jacurutu.svg" alt="Jacurutu" width="50" height="50"
+          class="d-inline-block align-text-middle" />
+        Projeto Jacurutu
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon whit"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">            
+            <a class="nav-link text-light" href="#sobre">Sobre o projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#modelos">Modelos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#comocitar">Como citar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#materialref">Material de referência</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#colaboradores">Colaboradores</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- FIM NAVBAR -->
+
+  <!-- Masthead-->
+  <header class="page-header">
+    <div class="container py-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6">
+          <h2 class="display-4 fw-bold">Projeto Jacurutu</h2>
+          <p class="fs-3">
+            Um modelo guiado para trabalhos acadêmicos da Universidade Federal do Rio de Janeiro.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="imgs/logo_jacurutu.svg" alt="Jacurutu" width="400" height="400" />
         </div>
       </div>
     </div>
-    <!-- FIM NAVBAR -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+  </header>
+
+  <!-- Secao Sobre-->
+  <section class="page-section bg-dark-subtle text-black mb-0" id="sobre">
+      <div class="container py-3">
+          <!-- Sobre o projeto Heading-->
+          <h2 class="page-section-heading display-4 fw-bold text-black">Sobre o projeto</h2>
+          <!-- Sobre o projeto Content-->
+          <p class="lead">O projeto foi criado para disponibilizar e manter modelos de trabalhos acadêmicos da UFRJ, verificados pelo SiBI, que respeitem as normas estabelecidas no manual de trabalhos acaêmicos da UFRJ.
+            O projeto foi criado sobre algumas premissa entre elas podemos destacar duas:
+          </p>
+          
+          <p class="fs-4 fw-bold">O modelo precisa ser simples</p>
+
+          <p class="lead">O principal ponto do projeto é a de tentar fazer um modelo que seja fácil de usar e de manter. Para isso o princípio do KISS (Keep It Simple Stupid) é muito bem vindo.</p>
+          <p class="lead">Seguem algumas sugestões podem ajudar a alcançar esse objetivo de simplicidade:
+          <ol class="lead">
+            <li>Utilizar preferencialmente os recursos mais básicos e nativos de cada modelo;</li>
+            <li>É importante tentar minimizar o uso de tećnicas e soluções mirabolantes. Normalmente, esse tipo de solução dificulta o entendimento e ajustes no trabalho dos usuários.</li>
+            <li>Tentar usar soluções já existentes, antes de criar algo, para alcançar as formatações desejadas. Por exemplo, em um modelo LaTeX, para escrever uma epígrafe no formato estabelecido no manual, basta utilizar o pacote epigraph já existente.</li>
+          </ol>
+          </p>
+          <p class="fs-4 fw-bold">Semântica do modelo</p>
+          <p class="lead">Além de ser aderente ao padão de formatação sugerido pelo SiBI da UFTJ, o modelo tenta apresentar um conteúdo guiado, que também ajude com a semântica do trabalho acadêmico. É possível indicar boas práticas na semântica esperadas em um texto acadêmico, como: as principais seções e subseções esperadas bem como as indicações sobre qual seria o conteúdo esperado para cada uma delas.</p>
+
+          <p class="fs-2 fw-bold">Por que Jacurutu?</p>
+          <div class="row align-items-start">
+            <div class="col-md-2 py-3" >
+              <img src="imgs/jacurutu.png" alt="Jacurutu" width="200" class="border border-3 border-white rounded img-fluid"/>
+            </div>
+            <div class="col-md-10">
+              <p class="lead">A escolha de um mascote é um hábito comum em projetos de código aberto, e o grupo que está participando da iniciativa achou que seria uma ideia interessante pensarmos em adotar um mascote para o projeto.
+                A coruja, por sem um animal que sempre está associado a sabedoria foi a escolha natural. Ao pesquisarmos sobre as corujas existentes na fauna basileira, encontros a espécie Jacurutu (<a href="https://www.wikiaves.com.br/wiki/jacurutu" target="_blank">virginianus nacurutu</a>), 
+                que também é conhecido como corujão-orelhudo, e coruja-orelhuda. A espécie é encontrada em quase todo território nacional. Além da sonoridade do nome, o seu hábito noturno pode ter sido levado em consideração durante a escolha da espécie ;) </p>
+            </div>
+          </div>
+          <p class="fs-2 fw-bold py-3">Histórico do projeto</p>
+          <p class="lead">
+            O projeto surgiu durante o desenvolvimento da dissertação de mestrado de <a href="#quemsomos-saulo">Saulo Andrade Almeida</a>, egresso do Programa de Pós-Graduação em Informática (PPGI), 
+            do Instituto de Computação da UFRJ. Ao escrever o seu texto, encontrou dificuldades em utilizar os modelos LaTeX existentes. Existiam pelo menos quatro ou cinco modelos, 
+          mas todos estavam desatualizados com relação os uútimos ajustes de formatação solicitadas pelo Manual de Trabalhos Acadẽmicos do SiBI. 
+          </p>
+          <p class="lead">
+            Ao tentar adaptar alguns dos modelos existentes, percebeu que a mioria deles não tinha uma comunidade ativa, e que sua manutenção no formato LaTeX eram bem complexas, baseadas
+            em macros e comandos customizados. Sendo assim, ele resolveu começar um modelo da forma mais simples possível, evitando ao máximo a criação ou uso de macros complexas.</p>
+          <p class="lead">
+            Com o desenvolvimento do trabalho, foi percebendo que a maioria das necessidades poderiam ser supridas por pacotes LaTeX existentes e amplamente adotados pela comunidade LaTeX e a conclusão do 
+            seu trabalho foi feito dessa forma, sem precisar criar nada novo.
+          </p>
+          <p class="lead">
+            Sobre o ponto de vista das regras e formatação, o trabalho foi acompanhado e revisado diversas vezes pela bibliotecária do Núcleo de Computaçẽo e Eletrónica (NCE), <a href="#quemsomos-tatiana">Tatiana Souza Ribeiro</a>, que ao final de algumas (muitas) idas e vindas, 
+            entendeu que o trabalho estava bem próximo das normas estabelecidas pelo Manual do SiBI.
+          </p>
+          <p class="lead">
+            A ideia de tornar esse esforço em algo que pudesse ser reutilizado por mais pessoas, melhorando e facilitando a produção acadêmica dentro do PPGI, fez com que fosse criado um repositório no GitHub para disponibilizar um modelo, 
+            e onde suas mudanças evoluções pudessem ser tratadas e controladas de forma ordenada, como um software.
+          </p>
+          <p class="lead">
+            Ao apresentar essa idea para a professora <a href="#quemsomos-monica">Mônica Ferreira da Silva</a>, da disciplina de Metodologia da Pesquisa do PPGI, ela achou que a ideia tinha um grande valor e adicionou ao modelo vigente, a ideia do conteúdo semântico, tornando o modelo não mais um guia 
+            de referência para a formatação, mas um guia que poderia orientar os usuários sobre quais seriam seções importantes dentro de um trabalho acadêmico, bem como quais os conteúdos que essas seções poderiam comportar. Dquele momento em diante o modelo 
+            passou a ser chamdao de "Um Modelo Guiado" para trabalhos acadêminos da Universidade Federal do Rio de Janeiro. 
+          </p>
+          <p class="lead">
+            O técnico administrativo <a href="#quemsomos-elton">Élton Carneiro Marinho</a> ingressou no grupo, com ideias e sugestões sobre como formatar e direcionar o que passou a ser chamado de Projeto Jacurutu. 
+            Dentre as ideias sugeridas, estava o registro da solução, a criação de vídeo tutorias curtos, que facilitassem a adoção e uso do modelo e a disponibilização do modelo 
+            em formatos de editores de textos como MS Word, Libre Office e Google Docs.
+          </p>
+                      
+          <p class="fs-2 fw-bold">Quem Somos</p>
+          <p class="lead">Atualmente, os principais integrantes do projeto Jacurutu são:</p>                    
+          <p class="fs-4 fw-bold" id="quemsomos-saulo">Saulo Andrade Almeida</p>
+          <div class="row align-items-start ">
+            <div class="col-md-2 py-3" >
+              <img src="imgs/saulo.png" alt="Saulo Andrade Almeida" width="200" class="border border-3 border-white rounded img-fluid"/>
+            </div>
+            <div class="col-md-10">
+              <p class="lead">Deu início ao projeto Jacurutu, é mestre em Informática pela Universidade Federal do Rio de Janeiro (2025) e Bacharel em Informática pela Universidade Católica do Salvador (2005). </p>
+              <p class="lead">Atualmente é Analista de Sistemas Sênior na Petróleo Brasileiro S.A. (Petrobras). Tem experiência na área de Ciência da Computação, com ênfase em Sistemas de Informação, atuando profissionalmente principalmente nos seguintes temas: engenharia de software, Java, C++, SQL, engenharia de requisitos, requisito e processamento paralelo. </p>
+              <p class="lead">Academicamente tem interesse nas áreas de processamento paralelo/distribuído.</p>
+              <p class="lead"><span class="fw-bold"><img src="imgs/lattes-icon.svg" width="26" height="26"/> Currículo Lattes: </span><a href="http://lattes.cnpq.br/9445629152806548" target="_blank">http://lattes.cnpq.br/9445629152806548</a></p>
+              <p class="lead"><span class="fw-bold"><img src="imgs/orcid-icon.svg" width="28" height="28"/> ORCID: </span><a href="https://orcid.org/0009-0000-3432-9996" target="_blank">https://orcid.org/0009-0000-3432-9996</a></p> 
+            </div>
+          </div>
+          <p class="fs-4 fw-bold" id="quemsomos-tatiana">Tatiana de Souza Ribeiro</p>
+          <div class="row align-items-start">
+            <div class="col-md-10">
+              <p class="lead">Mestra em Avaliação pela Faculdade Cesgranrio (2020). Especialização em Tecnologias da Informação Aplicadas à Educação pela Universidade Federal do Rio de Janeiro (2016). Graduação em Biblioteconomia e Documentação pela Universidade Federal Fluminense (2010). </p>
+              <p class="lead">Atualmente é bibliotecária da Universidade Federal do Rio de Janeiro. Atuando principalmente nos seguintes temas: Acessibilidade em bibliotecas; Tecnologia assistiva para pessoas com deficiência visual.</p>
+              <p class="lead"><span class="fw-bold"><img src="imgs/lattes-icon.svg" width="26" height="26"/> Currículo Lattes: </span><a href="http://lattes.cnpq.br/8006871142634350" target="_blank">http://lattes.cnpq.br/8006871142634350</a></p>
+              <p class="lead"><span class="fw-bold"><img src="imgs/orcid-icon.svg" width="28" height="28"/> ORCID: </span><a href="https://orcid.org/0000-0002-8375-4056" target="_blank">https://orcid.org/0000-0002-8375-4056</a></p> 
+            </div>            
+            <div class="col-md-2 py-3" >
+              <img src="imgs/tatiana.png" alt="Tatiana de Souza Ribeiro" width="200" class="border border-3 border-white rounded img-fluid"/>
+            </div>
+          </div>
+          <p class="fs-4 fw-bold" id="quemsomos-monica">Mônica Ferreira da Silva</p>
+          <div class="row align-items-start">
+            <div class="col-md-2 py-3" >
+              <img src="imgs/monica.png" alt="Mônica Ferreira da Silva" width="200" class="border border-3 border-white rounded img-fluid"/>
+            </div>
+            <div class="col-md-10">
+              <p class="lead">Possui Doutorado em Administração pelo COPPEAD/UFRJ (2006) com foco em estratégias e sistemas, Mestrado em Engenharia de Sistemas e Computação pela COPPE/UFRJ (1998), Especialização em Gerência de Projetos pelo NCE/UFRJ (2001) e Graduação em Informática pela Universidade Federal do Rio de Janeiro (UFRJ) concluído com grau cum laude de dignidade acadêmica (1988).</p>
+              <p class="lead">Atualmente é pesquisadora da Universidade Federal do Rio de Janeiro (UFRJ); fundadora e líder do grupo de pesquisa HumânITas (UFRJ) desde 2006; membro do grupo de pesquisas ResiliSUS do Centro de Estudos Estratégicos da FIOCRUZ/RJ e do Centro de Estudos em Gestão de Serviços de Saúde CES, do COPPEAD/UFRJ.</p>
+              <p class="lead">Atua como professora no programa de Pós-Graduação em Informática (PPGI/UFRJ). Participa de orientações de Mestrado e Doutorado na ELACH/UMinho, Portugal.</p>
+              <p class="lead">É bolsista de Pós-Doutorado Sênior do CNPq, coordena projeto Universal do CNPq e bolsa de Iniciação Científica da FAPERJ. Integrante da Rede SOFIA com o projeto GESTPLANTE, vinculado ao Programa Prioritário Saúde Digital (RNP/CATI/MCTI).</p>
+              <p class="lead">Foi Diretora da Área de Atividades de Extensão do NCE/UFRJ (2016/2019). Atuou com a Université de Tours, França (2010-1012) e com a University of San Diego, EUA (2002-2010) em projetos de ensino.</p>
+              <p class="lead">Tem experiência nas áreas de Ciência da Computação e Administração, com ênfase em Gestão da Tecnologia da Informação. Atua principalmente nos seguintes temas: estratégia e sistemas de informação, metodologia de pesquisa científica e adoção de tecnologia. Aplica suas pesquisas nas áreas de saúde e educação, tendo diversos artigos publicados em periódicos, livros, capítulos de livro e artigos em anais de congressos. É Editora-chefe do periódico Education Technology for Advancing Learning (et al.), membro do corpo editorial dos periódicos H2D - Revista de Humanidades Digitais (UMinho) e Meta: Avaliação (Faculdade Cesgranrio).</p>
+              <p class="lead"><span class="fw-bold"><img src="imgs/lattes-icon.svg" width="26" height="26"/> Currículo Lattes: </span><a href="http://lattes.cnpq.br/6380923400551734" target="_blank">http://lattes.cnpq.br/6380923400551734</a></p>
+              <p class="lead"><span class="fw-bold"><img src="imgs/orcid-icon.svg" width="28" height="28"/> ORCID: </span><a href="https://orcid.org/0000-0003-0951-6612" target="_blank">https://orcid.org/0000-0003-0951-6612</a></p> 
+              <p class="lead"><span class="fw-bold"><i class="bi bi-globe2" style="font-size: 1.5rem; color: #00aeff;"></i> Website:</span> <a href="https://monicasilva.net" target="_blank">https://monicasilva.net</a></p>
+              <p class="lead"><span class="fw-bold"><i class="bi bi-youtube" style="font-size: 1.5rem; color: #ff0000;"></i> Youtube: </span><a href="https://www.youtube.com/@profMonicaSilva" target="_blank">https://www.youtube.com/@profMonicaSilva</a></p>
+              <p class="lead"><span class="fw-bold"><i class="bi bi-instagram" style="font-size: 1.5rem; color: #ac2bac;"></i> Instagram: </span><a href="https://www.instagram.com/profmonicasilva" target="_blank">@profmonicasilva</a></p>
+              <p class="lead"><span class="fw-bold"><i class="bi bi-linkedin" style="font-size: 1.5rem; color: #0082ca;"></i> Linkedin: </span><a href="https://www.linkedin.com/in/profmonicasilva" target="_blank">https://www.linkedin.com/in/profmonicasilva</a></p>
+            </div>    
+          </div>   
+        <p class="fs-4 fw-bold" id="quemsomos-elton">Élton Carneiro Marinho</p>
+          <div class="row align-items-start">
+            <div class="col-md-10">
+              <p class="lead">Doutor em Gestão de Sistemas Complexos, com foco em Sistemas de Informação, pelo Programa de Pós-Graduação em Informática (PPGI) da Universidade Federal do Rio de Janeiro (UFRJ). Sua tese de Doutorado foi indicada ao Prêmio CAPES de Tese 2025 pelo PPGI.Possui formação sólida, tendo também obtido o mestrado na mesma área pelo PPGI. </p> 
+              <p class="lead">Vinculado à Sociedade Brasileira de Computação (SBC) desde 2014, tem atuado como professor colaborador em cursos de graduação da UFRJ, além de ter sido representante discente no PPGI e auxiliar na elaboração de projetos na Diretoria de Planejamento e Gestão do CCMN/UFRJ. </p>
+              <p class="lead">Seu trabalho é notório na área de sistemas de informação, especialmente em projetos de inovação, como o intitulado "OpenSoils-Inovando na Agricultura Digital," que recebeu o Selo de Inovação da SBC e menção honrosa do Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais (iNCE). </p>
+              <p class="lead">Tem experiência significativa em projetos de ensino a distância, colaborando com o Ministério da Educação em iniciativas para melhorar a educação.Suas linhas de pesquisa incluem Adoção de Tecnologia, Blockchain, e Sustentabilidade e Inovação, refletindo seu trabalho sobre como implementar tecnologias de forma eficaz em contextos complexos. </p>
+              <p class="lead">Também se destaca em atividades de publicação acadêmica, participando de eventos, comissões julgadoras e orientando alunos em pesquisas.</p>
+              <p class="lead"><span class="fw-bold"><img src="imgs/lattes-icon.svg" width="26" height="26"/> Currículo Lattes: </span><a href="http://lattes.cnpq.br/5300044777886797" target="_blank">http://lattes.cnpq.br/5300044777886797</a></p> 
+              <p class="lead"><span class="fw-bold"><img src="imgs/orcid-icon.svg" width="28" height="28"/> ORCID: </span><a href="https://orcid.org/0000-0003-0117-0610" target="_blank">https://orcid.org/0000-0003-0117-0610</a></p> 
+              
+            </div>            
+            <div class="col-md-2 py-3" >
+              <img src="imgs/elton.png" alt="Élton Carneiro Marinho" width="200" class="border border-3 border-white rounded img-fluid"/>
+            </div>
+          </div>                    
+      </div>
+  </section>
+
+
+  <!-- Secao Modelos-->
+  <section class="page-section text-black mb-0" id="modelos">
+      <div class="container py-3">
+          <!-- Modelos Heading-->
+          <h2 class="page-section-heading display-4 fw-bold text-black">Modelos</h2>
+          <!-- Modelos Content-->
+          <p class="lead">O projeto pretende manter o modelo homologado pelo SiBI, mas em diversos formatos. 
+            Atualmente a única versão pronta é a versão LaTeX, e cada um dos modelos poderá ser acessado em seus repositórios:
+          </p>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-9">
+              <h2 class="display-6 fw-bold">Jacurutu LaTeX</h2>
+              <p class="lead">Modelo do Projeto Jacururu em formato LaTeX. Informações mais detalhadas podem ser obtidas no repositório <a href="https://github.com/projeto-jacurutu/jacurutu-latex" target="_blank">jacurutu-latex</a> do <a href="https://github.com/projeto-jacurutu" target="_blank">GitHub do Projeto Jacurutu</a>.</p>
+              <p class="lead">O repositório possui uma <a href="https://github.com/projeto-jacurutu/jacurutu-latex/wiki" target="_blank">Wiki</a> com diversas informações técnicas do modelo, instruções sobre <a href="https://github.com/projeto-jacurutu/jacurutu-latex/wiki/Como-utilizar-o-modelo" target="_blank">como utilizar</a>, uma área de relato dos <a href="https://github.com/projeto-jacurutu/jacurutu-latex/wiki/Problemas-conhecidos" target="_blank">problemas conhecidos</a>, 
+                <a href="https://github.com/projeto-jacurutu/jacurutu-latex/wiki/Materiais-de-refer%C3%AAncia" target="_blank">materiais de referência específicos do modelo LaTeX</a>, além do <a href="https://github.com/projeto-jacurutu/jacurutu-latex/issues" target="_blank">rastreador de erros</a>, onde é possível sugerir melhorias, reportar um problema além de poder meter a mão na massa e ajudar na evolução do projeto.</p>
+            </div>
+            <div class="col-md-3">
+              <a href="https://github.com/projeto-jacurutu/jacurutu-latex" target="_blank"><img src="imgs/modelo_jacurutu_latex.svg" alt="Jacurutu Latex" width="300" class="border border-5 border-black rounded-5 img-fluid" /></a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+  <!-- Secao Como Citar-->
+  <section class="page-section bg-dark-subtle text-black mb-0" id="comocitar">
+      <div class="container py-3">
+          <!-- Como Citar Heading-->
+          <h2 class="page-section-heading display-4 fw-bold text-black">Como citar</h2>
+          <!-- Como Citar Content-->
+          <p class="lead">Se julgar que esse modelo foi importante durante produção do seu trabalho e quiser ajudar em sua divulgação, uma citação para esse modelo pode ser feita na seção de metodologia do seu trabalho. Para isso, pode ser utilizada algum desses formatos de citação:</p>
+
+          <p class="fs-4 fw-bold">Citação Bibtex para modelo LaTeX</p>
+          <p class="lead">Uma citação em formato bibtex é a maneira mais simples para citar esse modelo. Basta adicionar a entrada bibitex que segue, no arquivo: 3-pos-textuais/referencias_bibliograficas.bib, ajustando o valor campo urldate para a data de acesso do arquivo no formato ano/mes/dia. Ex.: urldate = {2025/08/31}</p>
+
+          <div class="container">
+              <div class="position-relative">
+                  <pre><code id="bibtex">
+@software{Projeto_Jacurutu,
+  author={Almeida, Saulo Andrade and Ribeiro, Tatiana de Sousa and da Silva, Mônica Ferreira and Marinho, Élton Carneiro},
+  title={Projeto Jacurutu: um modelo guiado para elaboração de trabalhos acadêmicos da UFRJ},
+  doi={10.5281/zenodo.16969842},
+  url={https://doi.org/10.5281/zenodo.16969842},
+  year={2015},
+  urldate = {YYYY-MM-DD}
+}</code></pre>
+                  <button class="btn btn-sm btn-outline-secondary copy-btn" id="copy-bnt-bibtex" onclick="copyCode('bibtex', 'copy-bnt-bibtex')">
+                          <i class="bi bi-clipboard"></i> Copiar
+                  </button>
+              </div>
+          </div>
+
+          <p class="lead">Em seguida basta citar o projeto, utilizando o comando \cite do LaTeX:</p>
+          <div class="container">
+              <div class="position-relative">
+                  <pre><code id="citacaobib">
+
+Esse trabalho utilizou o modelo de trabalho acadêmico mantido no Projeto Jacurutu \cite{Projeto_Jacurutu}\footnote{A última versão do modelo para trabalhos acadêmicos do Projeto Jacuruto pode ser acessada em: \url{https://doi.org/10.5281/zenodo.16969842}}.}</code></pre>
+                  <button class="btn btn-sm btn-outline-secondary copy-btn" id="copy-bnt-citacaobib" onclick="copyCode('citacaobib', 'copy-bnt-citacaobib')">
+                          <i class="bi bi-clipboard"></i> Copiar
+                      </button>
+              </div>
+          </div>
+          
+          <p class="fs-4 fw-bold">Citação texto plano</p>
+          <p class="lead">Caso queira usar a referência em formato plano, basta copiar o quadro abaixo:</p>
+
+          <div class="container">
+              <div class="position-relative">
+                  <pre><code id="refplano">
+ALMEIDA, Saulo Andrade; RIBEIRO, Tatiana de Sousa; SILVA, Mônica Ferreira da; MARINHO, Élton Carneiro. 
+Projeto Jacurutu: um modelo guiado para elaboração de trabalhos acadêmicos da UFRJ. Rio de Janeiro, 2025. 
+DOI:10.5281/zenodo.16969842. Disponível em: https://doi.org/10.5281/zenodo.16969842. Acesso em: DD mês. YYYY.</code></pre>
+                  <button class="btn btn-sm btn-outline-secondary copy-btn" id="copy-bnt-refplano" onclick="copyCode('refplano', 'copy-bnt-refplano')">
+                          <i class="bi bi-clipboard"></i> Copiar
+                      </button>
+              </div>
+          </div>
+          <p class="lead">Obs: Exemplo do formato da data de acesso: 27 abr. 2025.</p>
+          
+          <p class="lead">Em seguida basta citar no texto da seguite forma::</p>
+          <div class="container">
+              <div class="position-relative">
+                  <pre><code id="citacaoplana">
+
+Esse trabalho utilizou o modelo de trabalho acadêmico mantido no Projeto Jacurutu (Almeida et al., 2025). A última versão do modelo para trabalhos acadêmicos do Projeto Jacuruto pode ser acessada em: https://doi.org/10.5281/zenodo.16969842</code></pre>
+                  <button class="btn btn-sm btn-outline-secondary copy-btn" id="copy-bnt-citacaoplana" onclick="copyCode('citacaoplana', 'copy-bnt-citacaoplana')">
+                          <i class="bi bi-clipboard"></i> Copiar
+                      </button>
+              </div>
+          </div>
+      </div>
+    </section>
+
+  <!-- Secao Materiais de referência -->
+  <section class="page-section text-black mb-0" id="materialref">
+      <div class="container py-3">
+          <!-- Modelos Heading-->
+          <h2 class="page-section-heading display-4 fw-bold text-black">Material de referência</h2>
+          <!-- Modelos Content-->
+          <p class="lead">Links para alguns materiais de referência relacionados com o projeto Jacurutu:</p>
+
+          <p class="fs-4 fw-bold">Materiais de referência do SiBI</p>
+          <p class="lead">
+            <ul>
+              <li>Link da pagina da SIBI: <a href="https://sibi.ufrj.br" target="_blank">https://sibi.ufrj.br</a></li>
+              <li>Link da página do Manual para elaboração e normalização de trabalhos acadêmicos do SIBI: <a href="https://sibi.ufrj.br/index.php/inicio/700-atualizacao-do-manual-de-trabalhos-academicos-da-ufrj" target="_blank">https://sibi.ufrj.br/index.php/inicio/700-atualizacao-do-manual-de-trabalhos-academicos-da-ufrj</a></li>
+              <li>Link do Manual para elaboração e normalização de trabalhos acadêmicos do SIBI: <a href="https://drive.google.com/file/d/1IfNy51_qMf8cXEabOlm1U6zMXcH10FWL/view" target="_blank">https://drive.google.com/file/d/1IfNy51_qMf8cXEabOlm1U6zMXcH10FWL/view</a></li>
+              <li>Link da página de criação da ficha catalográfica:<a href="https://fichacatalografica.sibi.ufrj.br/" target="_blank">https://fichacatalografica.sibi.ufrj.br/</a></li>
+            </ul>
+          </p>
+
+          <p class="fs-4 fw-bold">Livros sobre metodologia da pesquisa</p>
+          <p class="lead">
+            <ul>
+              <li>Link do livro Como escrever uma monografia, da professora Mônica Ferreira da Silva sobre: <a href="https://www.amazon.com.br/dp/8522405441" target="_blank">https://www.amazon.com.br/dp/8522405441</a></li>              
+            </ul>
+          </p>
+      </div>
+    </section>
+
+<!-- Secao Colaboradores-->
+  <section class="page-section bg-dark-subtle text-black mb-0" id="colaboradores">
+      <div class="container py-3">
+          <!-- Colaboradores Heading-->
+          <h2 class="page-section-heading display-4 fw-bold text-black">Colaboradores</h2>
+          <!-- Colaboradores Content-->
+          <p class="lead">Seção dedicada para as pessoas que já contribuíram de forma direta ou indireta com a evolução do projeto:</p>
+
+          <p class="fs-4 fw-bold">Desenvolvedores</p>
+          <p class="lead">
+            Desenvolvedores que colaboraram diretamente no desenvolvimento do projeto:
+            <ul>
+              <li>Saulo Andrade Almeida / PPGI - <a href="https://www.github.com/sauloaalmeida">@sauloaalmeida</a></li>
+              <li>Leonardo Veiga / PPGI - <a href="https://www.github.com/LeoVAF">@LeoVAF</a></li>
+            </ul>
+          </p>
+
+          <p class="fs-4 fw-bold">Testadores</p>
+          <p class="lead">
+            Pessoas que já utilizaram ou estão desenvolvendo os seus trabalhos utilizando o projeto:
+            <ul>
+              <li>Antônio / PPGI</li>
+              <li>Ubirajara Simões Santos / PPGI</li>
+            </ul>
+          </p>
+
+          <p class="fs-4 fw-bold">Agradecimentos</p>
+          <p class="lead">
+            Pessoas que já utilizaram avaliaram ou incentivaram de alguma forma o projeto:
+            <ul>
+              <li>Bruno Alves do Caarmo / PPGI</li>
+            </ul>
+          </p>          
+      </div>
+  </section>
+
+<!-- Footer -->
+<footer class="text-center mb-0 align-items-center bg-dark p-1 text-white">
+  <!-- Section: Links  -->
+  <section class="page-section">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="bi bi-gem me-3"></i>Redes Socias
+          </h6>
+          <p>
+          <a href="" class="me-4 text-reset"><i class="bi bi-bluesky"></i></a>
+          <a href="" class="me-4 text-reset"><i class="bi bi-youtube"></i></a>
+          <a href="" class="me-4 text-reset"><i class="bi bi-instagram"></i></a>
+          <a href="" class="me-4 text-reset"><i class="bi bi-github"></i></a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Sobre o projeto
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Modelos
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Como citar</h6>
+          <p>New York, NY 10012, US</p>
+          <p>Citação plana</p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">
+            Material de referência
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->        
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Colaboradores
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->        
+
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 bg-black text-white" >
+    © 2026 Copyright: <a class="text-reset fw-bold" href="https://projeto-jacurutu.github.io/">Projeto Jacurutu</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+
 </html>
